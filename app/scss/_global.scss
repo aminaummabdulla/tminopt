@@ -29,6 +29,17 @@ body{
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-   
+    background-color: #f6f7fb;
 
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
 }
