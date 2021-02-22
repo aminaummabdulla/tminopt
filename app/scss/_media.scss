@@ -255,9 +255,7 @@
        text-align: center;
    }
     .sale__top-links{
-        display: block;
-        text-align: center;
-        
+       flex-wrap: wrap;
     }
     .sale__top-link + .sale__top-link{
             margin-top: 20px;

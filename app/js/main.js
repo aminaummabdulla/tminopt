@@ -61,6 +61,15 @@ $(function(){
 
       });
       
+      
+    $('.product__description-tabs .tab').on('click', function(event) {
+      var id = $(this).attr('data-id');
+          $('.product__description-tabs').find('.tab-item').removeClass('active-tab').hide();
+          $('.product__description-tabs').find('.tab').removeClass('active');
+          $(this).addClass('active');
+          $('#'+id).addClass('active-tab').fadeIn();
+          return false;
+      });
      
       $('.header__bottom-btn').on('click', function(){
         $('.nav__list').slideToggle();
@@ -69,6 +78,12 @@ $(function(){
         $('.catalog-mobile').on('click', function(){
           $('.catalog-mobile-bottom').slideToggle();
           });
+
+
+          $('.drop-down__link').on('click', function(){
+            $('.drop-down__list').slideToggle();
+            });
+               
           
       var mixer = mixitup('.popular__items');
 
