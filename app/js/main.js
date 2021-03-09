@@ -16,6 +16,14 @@ $(function(){
       alert('Спасибо, рейтинг товара составляет ' + rating + ' баллов');
     }
   });
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 50,
+    max: 2000,
+    from: 50,
+    to: 1500,
+    prefix: " руб "
+});
     $('.slider__inner').slick({
         dots: true,
         infinite: true,
@@ -62,10 +70,21 @@ $(function(){
       });
       
       
+      $('[data-fancybox="images"]').fancybox({
+        afterLoad : function(instance, current) {
+            var pixelRatio = window.devicePixelRatio || 1;
+    
+            if ( pixelRatio > 1.5 ) {
+                current.width  = current.width  / pixelRatio;
+                current.height = current.height / pixelRatio;
+            }
+        }
+    });
+
     $('.product__description-tabs .tab').on('click', function(event) {
       var id = $(this).attr('data-id');
           $('.product__description-tabs').find('.tab-item').removeClass('active-tab').hide();
-          $('.product__description-tabs').find('.tab').removeClass('active');
+          $('.product__description-tabs .tabs').find('.tab').removeClass('active');
           $(this).addClass('active');
           $('#'+id).addClass('active-tab').fadeIn();
           return false;
@@ -79,15 +98,23 @@ $(function(){
           $('.catalog-mobile-bottom').slideToggle();
           });
 
-
-          $('.drop-down__link').on('click', function(){
-            $('.drop-down__list').slideToggle();
-            });
-               
+          $('.drop-down__link').on('click', function() {
+             $('.drop-down__list').fadeToggle(); }); 
+             // Скрыть блок с категориями, по клику вне блока
+             let btnCategories = $(".drop-down__link"); 
+             // указываем кнопку
+              let categories = $(".drop-down__list");  
+              $(document).mouseup(function (e) { 
+                // событие клика по веб-документу
+                 if ( ! btnCategories.is(e.target) && btnCategories.has(e.target).length === 0 &&
+                  // если клик был не по нашему блоку
+                   ! categories.is(e.target) && categories.has(e.target).length === 0
+                    // и не по его дочерним элементам
+                       ) { categories.fadeOut();
+                         // скрываем его
+                          } });
           
       var mixer = mixitup('.popular__items');
-
-       
 
       
 });

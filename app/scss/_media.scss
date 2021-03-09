@@ -105,6 +105,14 @@
         max-width: 350px;
     }
 }
+@media (max-width: 820px){
+    .product__info-inner{
+        display: block;
+    }
+    .product__image-img{
+        margin: 0 auto;
+    }
+}
 @media (max-width: 800px){
     .footer__inner-cols{
         display: block;
@@ -152,6 +160,13 @@
     }
 }
 @media (max-width: 760px){
+    .product__menu-inner{
+        display: block;
+    }
+    .breadcrumbs__inner{
+        padding-top: 20px;
+        
+    }
     .new__slider-item{
         max-width: 275px;
         
@@ -197,6 +212,33 @@
         top: 317px;
     }
 }
+@media (max-width: 570px){
+    .product__description-tabs{
+        .tabs{
+                display: block;
+                padding-top: 0;
+                .tab {
+                    display: block;
+                    border-right: none;
+                    text-align: center;
+                    border-bottom: 1px solid #A0AEB5;
+                   
+                }
+                .tab.active{
+                    border-right: none;
+                    border-bottom: 1px solid #6b55e7;
+                }
+        }
+    }
+    .tab-item__form{
+        input{
+            max-width: 100%;
+        }
+        textarea{
+            max-width: 100%;
+        }
+    }
+}
 @media (max-width: 525px){
     .slider__item-img{
         max-width: 400px;
@@ -204,11 +246,11 @@
         margin: 0 auto;
     }
 }
-@media (max-width: 405px){
-    .slider__item-img{
-        max-width: 320px;
-        max-height: 150px;
-        margin: 0 auto;
+
+@media (max-width: 440px){
+    .product__image-img{
+        height: 320px;
+        width: 320px;
     }
 }
 @media (max-width: 460px){
@@ -260,6 +302,32 @@
     .sale__top-link + .sale__top-link{
             margin-top: 20px;
         }
+}
+@media (max-width: 405px){
+    .slider__item-img{
+        max-width: 320px;
+        max-height: 150px;
+        margin: 0 auto;
+    }
+    .product__information-price{
+        font-size: 20px;
+        padding: 35px 90px;
+    }
+}
+@media (max-width: 360px){
+    .product__image-img{
+        height: 270px;
+        width: 270px;
+    }
+}
+@media (max-width: 350px){
+   .popular__item-cart{
+       padding: 10px 9px;
+   }
+   .popular__item-like{
+    padding: 10px 9px;
+
+   }
 }
 @media (max-width: 340px){
     .header__search-form{
