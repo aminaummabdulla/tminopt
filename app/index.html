@@ -75,12 +75,14 @@
           </nav>
           
           <div class="header__acc">
-              <a data-fancybox data-src="#modal" href="javascript:;"  class="header__acc-user">
+              <a data-fancybox data-src="#modal" href="javascript:;"  class="header__acc header__acc-user header__acc-login--off">
                   Войти в аккаунт
               </a>
-              <a href="#" class="header__acc-cart">
+              <a data-fancybox data-src="#modal-cart" href="javascript:;" class="header__acc header__acc-cart">
                   Корзина
               </a>
+              <a href="#" class="header__acc header__acc-wishlist  header__acc-login--on">Избранное</a>
+              <a href="#" class="header__acc header__acc-logout header__acc-login--on">Выйти</a>
           </div>
         </div>
         </div>
@@ -1116,7 +1118,102 @@
        </form>
     </div>
    </div>
+   <div id="modal-cart">
+    <div class="modal-cart__wrapper">
+        <div class="modal-cart__title">
+            Корзина
+        </div>
+        <div class="modal-cart__item">
+            <a href="#" class="modal-cart__image" style="background-image: url(images/item1_small.jpg);"></a>
+            <div class="modal-cart__description">
+                <a href="#" class="modal-cart__name">
+                    Испанский Шафран 1грамм
+                </a>
+                <div class="modal-cart__quantity">
 
+                    <form class="modal-cart__form">
+                        <label>Количество:</label>
+                        <input type="number" min="1" max="50" step="1" value="1">
+                    </form>
+                </div>
+                <div class="modal-cart__price">
+                    Цена: 600 руб.
+                </div>
+            </div>
+        </div>
+        <div class="modal-cart__item">
+            <a href="#" class="modal-cart__image" style="background-image: url(images/item1_small.jpg);"></a>
+            <div class="modal-cart__description">
+                <a href="#" class="modal-cart__name" style="background-image: url(images/item1_small.jpg);">
+                    Испанский Шафран 1грамм
+                </a>
+                <div class="modal-cart__quantity">
+
+                    <form class="modal-cart__form">
+                        <label>Количество:</label>
+                        <input type="number" min="1" max="50" step="1" value="1">
+                    </form>
+                </div>
+                <div class="modal-cart__price">
+                    Цена: 600 руб.
+                </div>
+            </div>
+        </div>
+        <div class="modal-cart__item">
+            <a href="#" class="modal-cart__image" style="background-image: url(images/item1_small.jpg);"></a>
+            <div class="modal-cart__description">
+                <a href="#" class="modal-cart__name">
+                    Испанский Шафран 1грамм
+                </a>
+                <div class="modal-cart__quantity">
+
+                    <form class="modal-cart__form">
+                        <label>Количество:</label>
+                        <input type="number" min="1" max="50" step="1" value="1">
+                    </form>
+                </div>
+                <div class="modal-cart__price">
+                    Цена: 600 руб.
+                </div>
+            </div>
+        </div>
+        <div class="modal-cart__total">
+            Итого: 2260 руб.
+        </div>
+        <a href="#" class="modal-cart__btn">
+            Оформить заказ
+        </a>
+    </div>
+   </div>
+   <div id="modal-click">
+    <div class="modal-click__inner">
+        <div class="modal-click__title">
+            Оформление заказа
+        </div>
+        <div class="modal-click__content">
+            <div class="modal-click__content-info">
+                <p>Пожалуйста, укажите ваш контактный телефон.</p>
+                <p>Мы свяжемся с вами в ближайшее время.</p>
+            </div>
+            <form class="modal-click__content-form">
+                <label>Ваше имя<span>*</span></label>
+                <input type="text" required>
+                <label>Контактный телефон<span>*</span></label>
+                <input type="text" required>
+                <label>Адрес</label>
+                <textarea placeholder="Укажите здесь ваш адрес, комментарии и пожелания по данному заказу"></textarea>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox_1">
+                    <label for="checkbox_1">Я подтверждаю свою дееспособность, даю согласие на обработку своих персональных данных.
+                    </label>
+                   </div>
+                   <div class="modal-click__content-btn">
+                       Заказать
+                   </div>
+            </form>
+        </div>
+    </div>
+   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

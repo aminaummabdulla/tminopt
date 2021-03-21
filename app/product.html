@@ -19,74 +19,76 @@
 <body>
     <div class="wrapper">
         <div class="content page-content">
-    <header class="header">
-        <div class="container">
-            <div class="header__info">
-                <div class="header__logo">
-                    <div class="header__logo-img">
-                        <img src="images/logo.png" alt="">
-                    </div>
-                    <div class="header__logo-info">
-                         <div class="header__logo-text">
-                        Tmin<span>opt.ru</span>
-                    </div>
-                    <div class="header__logo-text2">
-                        Косметика из Египта
-                    </div>
-                    </div>
-                   
-      
-                </div> 
-                <div class="header__search">
-                    <form class="header__search-form" action="">
-                        <input type="text" placeholder="Поиск">
-                         <button type="submit">Найти</button>
-                         <button class="mobile lnr lnr-magnifier>"></button>
-                    </form>
-                   
-                </div>
-                <div class="header__phone">
-                    <a class="header__phone-nomber1" href="tel:+79636966351">+7(963)696-63-51</a>
-                    <a class="header__phone-nomber1" href="tel:++79850474961"> +7(985)047-49-61</a>
-                </div>
-
-            </div>
-        </div>
-            <div class="header__bottom">
+            <header class="header">
                 <div class="container">
-                <div class="header__bottom-inner">
-
-              <div class="header__bottom-btn">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-              </div>
-          <nav class="nav__list">
-              <ul>
-                  <li><a href="#">Бренды</a></li>
-                  <li><a href="#">Каталог</a></li>
-                  <li><a href="#">Скидки</a></li>
-                  <li><a href="#">Оптовикам</a></li>
-                  <li><a href="#">Доставка и оплата</a></li>
-                  <li><a href="#">Отзывы</a></li>
-                  <li><a href="#">Контакты</a></li>
-                  <li><a href="#">Блог</a></li>
-              </ul>
-          </nav>
-          
-          <div class="header__acc">
-              <a data-fancybox data-src="#modal" href="javascript:;"  class="header__acc-user">
-                  Войти в аккаунт
-              </a>
-              <a href="#" class="header__acc-cart">
-                  Корзина
-              </a>
-          </div>
-        </div>
-        </div>
-        </div>
+                    <div class="header__info">
+                        <div class="header__logo">
+                            <div class="header__logo-img">
+                                <img src="images/logo.png" alt="">
+                            </div>
+                            <div class="header__logo-info">
+                                 <div class="header__logo-text">
+                                Tmin<span>opt.ru</span>
+                            </div>
+                            <div class="header__logo-text2">
+                                Косметика из Египта
+                            </div>
+                            </div>
+                           
+              
+                        </div> 
+                        <div class="header__search">
+                            <form class="header__search-form" action="">
+                                <input type="text" placeholder="Поиск">
+                                 <button type="submit">Найти</button>
+                                 <button class="mobile lnr lnr-magnifier>"></button>
+                            </form>
+                           
+                        </div>
+                        <div class="header__phone">
+                            <a class="header__phone-nomber1" href="tel:+79636966351">+7(963)696-63-51</a>
+                            <a class="header__phone-nomber1" href="tel:++79850474961"> +7(985)047-49-61</a>
+                        </div>
         
-    </header>
+                    </div>
+                </div>
+                    <div class="header__bottom">
+                        <div class="container">
+                        <div class="header__bottom-inner">
+        
+                      <div class="header__bottom-btn">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                      </div>
+                  <nav class="nav__list">
+                      <ul>
+                          <li><a href="#">Бренды</a></li>
+                          <li><a href="#">Каталог</a></li>
+                          <li><a href="#">Скидки</a></li>
+                          <li><a href="#">Оптовикам</a></li>
+                          <li><a href="#">Доставка и оплата</a></li>
+                          <li><a href="#">Отзывы</a></li>
+                          <li><a href="#">Контакты</a></li>
+                          <li><a href="#">Блог</a></li>
+                      </ul>
+                  </nav>
+                  
+                  <div class="header__acc">
+                      <a data-fancybox data-src="#modal" href="javascript:;"  class="header__acc-user header__acc-login--off">
+                          Войти в аккаунт
+                      </a>
+                      <a data-fancybox data-src="#modal-cart" href="javascript:;" class="header__acc-cart">
+                          Корзина
+                      </a>
+                      <a href="#" class="header__acc-wishlist  header__acc-login--on">Избранное</a>
+                      <a href="#" class="header__acc-logout header__acc-login--on">Выйти</a>
+                  </div>
+                </div>
+                </div>
+                </div>
+                
+            </header>
 
 <section class="product__menu">
     <div class="container">
@@ -168,14 +170,7 @@
                                         
             </div>
             <form class="product__information-form">
-                <label>Количество:</label>
-                <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                    <input type="number" min="1" max="50" step="1" value="1">
             </form>
             <div class="product__information-links">
                 <a href="#" class="popular__item-cart">
@@ -188,7 +183,7 @@
                 
             </div>
         
-            <a href="#" class="product__click">Купить в 1 клик</a>
+            <a data-fancybox data-src="#modal-click" href="javascript:;" class="product__click">Купить в 1 клик</a>
         </div>
         </div>
     </div>
@@ -382,6 +377,98 @@
    </div>
             <button>Войти</button>
        </form>
+    </div>
+   </div>
+   <div id="modal-cart">
+    <div class="modal-cart__wrapper">
+        <div class="modal-cart__title">
+            Корзина
+        </div>
+        <div class="modal-cart__item">
+            <a href="#" class="modal-cart__image" style="background-image: url(images/item1_small.jpg);"></a>
+            <div class="modal-cart__description">
+                <a href="#" class="modal-cart__name">
+                    Испанский Шафран 1грамм
+                </a>
+                <div class="modal-cart__quantity">
+
+                    <form class="modal-cart__form">
+                        <label>Количество:</label>
+                        <input type="number" min="1" max="50" step="1" value="1">
+                    </form>
+                </div>
+                <div class="modal-cart__price">
+                    Цена: 600 руб.
+                </div>
+            </div>
+        </div>
+        <div class="modal-cart__item">
+            <a href="#" class="modal-cart__image" style="background-image: url(images/item1_small.jpg);"></a>
+            <div class="modal-cart__description">
+                <a href="#" class="modal-cart__name" style="background-image: url(images/item1_small.jpg);">
+                    Испанский Шафран 1грамм
+                </a>
+                <div class="modal-cart__quantity">
+
+                    <form class="modal-cart__form">
+                        <label>Количество:</label>
+                        <input type="number" min="1" max="50" step="1" value="1">
+                    </form>
+                </div>
+                <div class="modal-cart__price">
+                    Цена: 600 руб.
+                </div>
+            </div>
+        </div>
+        <div class="modal-cart__item">
+            <a href="#" class="modal-cart__image" style="background-image: url(images/item1_small.jpg);"></a>
+            <div class="modal-cart__description">
+                <a href="#" class="modal-cart__name">
+                    Испанский Шафран 1грамм
+                </a>
+                <div class="modal-cart__quantity">
+
+                    <form class="modal-cart__form">
+                        <label>Количество:</label>
+                        <input type="number" min="1" max="50" step="1" value="1">
+                    </form>
+                </div>
+                <div class="modal-cart__price">
+                    Цена: 600 руб.
+                </div>
+            </div>
+        </div>
+        <div class="modal-cart__total">
+            Итого: 2260 руб.
+        </div>
+        <a href="#" class="modal-cart__btn">
+            Оформить заказ
+        </a>
+    </div>
+   </div>
+   <div id="modal-click">
+    <div class="modal-click__inner">
+        <div class="modal-click__title">
+            Оформление заказа
+        </div>
+        <div class="modal-click__content">
+            <div class="modal-click__content-info">
+                <p>Пожалуйста, укажите ваш контактный телефон.</p>
+                <p>Мы свяжемся с вами в ближайшее время.</p>
+            </div>
+            <form class="modal-click__content-form">
+                <label>Ваше имя<span>*</span></label>
+                <input type="text" required>
+                <label>Контактный телефон<span>*</span></label>
+                <input type="text" required>
+                <label>Адрес</label>
+                <textarea placeholder="Укажите здесь ваш адрес, комментарии и пожелания по данному заказу"></textarea>
+                
+                   <button type="submit" class="modal-click__content-btn">
+                       Заказать
+                   </и>
+            </form>
+        </div>
     </div>
    </div>
 
